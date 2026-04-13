@@ -2,11 +2,11 @@
 document.addEventListener('DOMContentLoaded',function(){
   // Background slider
   const images = [
-    'url(https://via.placeholder.com/1200x500?text=Excellence+in+Education)',
-    'url(https://via.placeholder.com/1200x500?text=Holistic+Development)',
-    'url(https://via.placeholder.com/1200x500?text=Safe+Learning+Environment)',
-    'url(https://via.placeholder.com/1200x500?text=Experienced+Faculty)',
-    'url(https://via.placeholder.com/1200x500?text=Modern+Facilities)'
+    'url(assets/images/slide1.jpg)',
+    'url(assets/images/slide2.jpg)',
+    'url(assets/images/slide3.jpg)',
+    'url(assets/images/slide4.jpg)',
+    'url(assets/images/slide5.jpg)'
   ];
   const hero = document.querySelector('.hero');
   if(hero){
