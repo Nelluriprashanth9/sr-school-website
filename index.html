@@ -9,7 +9,10 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="brand">SR Group of Schools</h1>
+      <div style="display:flex;align-items:center;">
+        <img src="https://via.placeholder.com/50x50?text=SR" alt="SR Logo" style="margin-right:1rem;border-radius:50%;">
+        <h1 class="brand">SR Group of Schools</h1>
+      </div>
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -22,11 +25,6 @@
 
   <main>
     <section class="hero">
-      <div class="slider" id="slider">
-        <img src="https://via.placeholder.com/1200x500?text=Slide+1" alt="Slide 1">
-        <img src="https://via.placeholder.com/1200x500?text=Slide+2" alt="Slide 2">
-        <img src="https://via.placeholder.com/1200x500?text=Slide+3" alt="Slide 3">
-      </div>
       <div class="hero-copy container">
         <h2>Excellence in Education</h2>
         <p>Preparing students for a bright future with strong academics, values and activities.</p>
@@ -36,17 +34,50 @@
 
     <section class="highlights container">
       <article>
+        <img src="https://via.placeholder.com/300x200?text=Holistic+Learning" alt="Holistic Learning">
         <h3>Holistic Learning</h3>
         <p>Balanced academics and extracurriculars.</p>
       </article>
       <article>
+        <img src="https://via.placeholder.com/300x200?text=Experienced+Faculty" alt="Experienced Faculty">
         <h3>Experienced Faculty</h3>
         <p>Qualified teachers committed to student success.</p>
       </article>
       <article>
+        <img src="https://via.placeholder.com/300x200?text=Safe+Campus" alt="Safe Campus">
         <h3>Safe Campus</h3>
         <p>Secure, nurturing environment.</p>
       </article>
+    </section>
+
+    <section class="testimonials container">
+      <h2>What Parents Say</h2>
+      <div style="display:grid;grid-template-columns:1fr;gap:1rem;">
+        <blockquote style="background:var(--card-bg);padding:1rem;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <p>"Excellent education and caring staff. My child has grown tremendously."</p>
+          <cite>— Parent A</cite>
+        </blockquote>
+        <blockquote style="background:var(--card-bg);padding:1rem;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <p>"A safe and inspiring environment for learning."</p>
+          <cite>— Parent B</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="news container">
+      <h2>Latest News</h2>
+      <div style="display:grid;grid-template-columns:1fr;gap:1rem;">
+        <article style="background:var(--card-bg);padding:1rem;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <img src="https://via.placeholder.com/300x200?text=Annual+Sports+Day" alt="Annual Sports Day" style="width:100%;border-radius:4px;margin-bottom:1rem;">
+          <h3>Annual Sports Day</h3>
+          <p>Join us for our annual sports day event on [Date]. Fun activities for all ages!</p>
+        </article>
+        <article style="background:var(--card-bg);padding:1rem;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <img src="https://via.placeholder.com/300x200?text=Science+Fair" alt="Science Fair" style="width:100%;border-radius:4px;margin-bottom:1rem;">
+          <h3>Science Fair Winners</h3>
+          <p>Congratulations to our students for winning awards at the regional science fair.</p>
+        </article>
+      </div>
     </section>
   </main>
 

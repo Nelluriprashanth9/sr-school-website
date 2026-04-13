@@ -1,9 +1,19 @@
 // Simple slider and small client-side helpers
 document.addEventListener('DOMContentLoaded',function(){
-  // Slider
-  const imgs = Array.from(document.querySelectorAll('#slider img'));
-  let idx = 0;
-  if(imgs.length){ imgs[0].classList.add('active'); setInterval(()=>{ imgs[idx].classList.remove('active'); idx=(idx+1)%imgs.length; imgs[idx].classList.add('active'); },4000); }
+  // Background slider
+  const images = [
+    'url(https://via.placeholder.com/1200x500?text=Excellence+in+Education)',
+    'url(https://via.placeholder.com/1200x500?text=Holistic+Development)',
+    'url(https://via.placeholder.com/1200x500?text=Safe+Learning+Environment)',
+    'url(https://via.placeholder.com/1200x500?text=Experienced+Faculty)',
+    'url(https://via.placeholder.com/1200x500?text=Modern+Facilities)'
+  ];
+  const hero = document.querySelector('.hero');
+  if(hero){
+    hero.style.backgroundImage = images[0];
+    let idx = 0;
+    setInterval(()=>{ idx=(idx+1)%images.length; hero.style.backgroundImage = images[idx]; },4000);
+  }
 
   // Basic form UX: alert on submit (can be removed)
   const form = document.getElementById('admissionForm');
