@@ -1,16 +1,10 @@
-// Simple slider and small client-side helpers
-document.addEventListener('DOMContentLoaded',function(){
   // Background slider
   const images = [
-    'url(../assets/images/img1.jpg)',
-    'url(../assets/images/img2.jpg)',
-    'url(../assets/images/img3.jpg)',
-    'url(../assets/images/img4.jpg)',
-    'url(../assets/images/img5.jpg)',
-    'url(../assets/images/img6.jpg)',
-    'url(../assets/images/img7.jpg)',
-    'url(../assets/images/img8.jpg)',
-    'url(../assets/images/img9.jpg)'
+    'url(assets/images/slide1.jpg)',
+    'url(assets/images/slide2.jpg)',
+    'url(assets/images/slide3.jpg)',
+    'url(assets/images/slide4.jpg)',
+    'url(assets/images/slide5.jpg)'
   ];
   const hero = document.querySelector('.hero');
   if(hero){
@@ -19,10 +13,34 @@ document.addEventListener('DOMContentLoaded',function(){
     setInterval(()=>{ idx=(idx+1)%images.length; hero.style.backgroundImage = images[idx]; },4000);
   }
 
-  // Basic form UX: alert on submit (can be removed)
-  const form = document.getElementById('admissionForm');
-  if(form){ form.addEventListener('submit',function(e){
-    // Let actual submission proceed; show a quick message
-    setTimeout(()=>{ alert('Application submitted — follow README to configure backend for storing submissions.'); },10);
-  }); }
-});
+  // Form validation
+  const contactForm = document.getElementById('contactForm');
+  if(contactForm){
+    contactForm.addEventListener('submit',function(e){
+      e.preventDefault();
+      const name = contactForm.name.value.trim();
+      const email = contactForm.email.value.trim();
+      const message = contactForm.message.value.trim();
+      if(!name || !email || !message){
+        alert('Please fill in all fields.');
+        return;
+      }
+      if(!/\S+@\S+\.\S+/.test(email)){
+        alert('Please enter a valid email.');
+        return;
+      }
+      alert('Message sent successfully!');
+      contactForm.reset();
+    });
+  }
+
+  // Add fade-in animation to sections
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('fade-in');
+      }
+    });
+  });
+  sections.forEach(section=>observer.observe(section));

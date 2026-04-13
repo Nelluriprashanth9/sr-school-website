@@ -1,11 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=pages/index.html">
-    <title>Redirecting...</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arka AI Robotics</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <p>If you are not redirected, <a href="pages/index.html">click here</a>.</p>
+  <header class="site-header">
+    <div class="container">
+      <div style="display:flex;align-items:center;">
+        <img src="assets/images/logo.png" alt="Arka AI Robotics Logo" style="margin-right:1rem;border-radius:50%;">
+        <h1 class="brand">Arka AI Robotics</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy container">
+        <h2>Innovating Robotics with AI</h2>
+        <p>Advanced AI-powered robotics solutions for industry and research.</p>
+        <a class="btn" href="#contact">Get in Touch</a>
+      </div>
+    </section>
+
+    <section class="highlights container">
+      <article>
+        <img src="assets/images/ai-integration.jpg" alt="AI Integration">
+        <h3>AI Integration</h3>
+        <p>Cutting-edge AI algorithms for intelligent robotics.</p>
+      </article>
+      <article>
+        <img src="assets/images/automation.jpg" alt="Automation">
+        <h3>Automation</h3>
+        <p>Streamline processes with our automated robotic systems.</p>
+      </article>
+      <article>
+        <img src="assets/images/research.jpg" alt="Research">
+        <h3>Research</h3>
+        <p>Collaborate on groundbreaking robotics research.</p>
+      </article>
+    </section>
+
+    <section class="testimonials container">
+      <h2>What Our Partners Say</h2>
+      <div style="display:grid;grid-template-columns:1fr;gap:1rem;">
+        <blockquote style="background:var(--card-bg);padding:1rem;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <p>"Arka's AI robotics have revolutionized our manufacturing process."</p>
+          <cite>— TechCorp Industries</cite>
+        </blockquote>
+        <blockquote style="background:var(--card-bg);padding:1rem;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <p>"Exceptional innovation and support from the Arka team."</p>
+          <cite>— RoboLabs Inc.</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="news container">
+      <h2>Latest Updates</h2>
+      <div style="display:grid;grid-template-columns:1fr;gap:1rem;">
+        <article style="background:var(--card-bg);padding:1rem;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <img src="assets/images/new-robot.jpg" alt="New Robot Launch" style="width:100%;border-radius:4px;margin-bottom:1rem;">
+          <h3>New AI Robot Launch</h3>
+          <p>Introducing our latest AI-powered robotic arm for industrial applications.</p>
+        </article>
+        <article style="background:var(--card-bg);padding:1rem;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <img src="assets/images/conference.jpg" alt="AI Conference" style="width:100%;border-radius:4px;margin-bottom:1rem;">
+          <h3>AI Robotics Conference</h3>
+          <p>Join us at the upcoming AI Robotics Summit in [City].</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" required></textarea></label>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Arka AI Robotics — info@arkaairobotics.com</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
