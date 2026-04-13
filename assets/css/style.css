@@ -7,7 +7,7 @@ body{font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;color:#222;
 .site-header .container{display:flex;align-items:center;justify-content:space-between}
 .site-header nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
 .brand{margin:0;font-size:1.1rem}
-.hero{position:relative;background:radial-gradient(circle at top,rgba(0,0,0,0.18),rgba(0,0,0,0.55)),url('../images/slide1.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;min-height:550px;overflow:hidden}
+.hero{position:relative;background:radial-gradient(circle at top,rgba(0,0,0,0.18),rgba(0,0,0,0.55)),url('../images/img1.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;min-height:550px;overflow:hidden}
 .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.35),rgba(0,0,0,0.6));pointer-events:none}
 .hero-copy{position:absolute;left:1rem;top:1.5rem;color:white;text-shadow:0 1px 4px rgba(0,0,0,0.8);max-width:500px;background:rgba(0,0,0,0.35);backdrop-filter:blur(8px);padding:1.5rem;border-radius:12px;z-index:2}
 .slider{display:none !important;}

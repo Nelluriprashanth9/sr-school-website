@@ -2,11 +2,15 @@
 document.addEventListener('DOMContentLoaded',function(){
   // Background slider
   const images = [
-    'url(assets/images/slide1.jpg)',
-    'url(assets/images/slide2.jpg)',
-    'url(assets/images/slide3.jpg)',
-    'url(assets/images/slide4.jpg)',
-    'url(assets/images/slide5.jpg)'
+    'url(assets/images/img1.jpg)',
+    'url(assets/images/img2.jpg)',
+    'url(assets/images/img3.jpg)',
+    'url(assets/images/img4.jpg)',
+    'url(assets/images/img5.jpg)',
+    'url(assets/images/img6.jpg)',
+    'url(assets/images/img7.jpg)',
+    'url(assets/images/img8.jpg)',
+    'url(assets/images/img9.jpg)'
   ];
   const hero = document.querySelector('.hero');
   if(hero){
